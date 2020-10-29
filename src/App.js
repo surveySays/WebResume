@@ -5,7 +5,8 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //Pages
-import Landing from "./Landing";
+// import Landing from "./Landing";
+import LandingNew from "./LandingNew";
 import PageNotFound from "./PageNotFound";
 
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Landing} />
+          <Route exact path="/" component={LandingNew} />
           <Route component={PageNotFound} />
         </Switch>
       </Router>
