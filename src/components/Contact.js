@@ -27,9 +27,13 @@ import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 //Images
 import FadeIn from "react-fade-in";
 
+//firebase db
+import { db } from "../firebase.js";
+
 //Components
 import SuccessAlert from "../SuccessAlert";
 import { MessageForm } from "../Submission";
+// import { mailer } from "../mailer/Mailer";
 
 //Ionicons
 import IosCallOutline from "react-ionicons/lib/IosCallOutline";
@@ -43,6 +47,8 @@ import LogoBuffer from "react-ionicons/lib/LogoBuffer";
 import IosCode from "react-ionicons/lib/IosCode";
 import IosPinOutline from "react-ionicons/lib/IosPinOutline";
 import IosMailOutline from "react-ionicons/lib/IosMailOutline";
+
+const mail = require("../mailer/Mailer");
 
 export class Contact extends Component {
   constructor(props) {
@@ -97,6 +103,7 @@ export class Contact extends Component {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message,
+      created: new Date().toISOString(),
     };
 
     let errorCounter = 0;
@@ -139,7 +146,8 @@ export class Contact extends Component {
     this.setState({ showAlert: true });
     this.setState({ name: "", email: "", message: "" });
 
-    MessageForm(formData); //pass data to backend
+    db.collection("messages").add(formData);
+    // mail.mailer(formData, db);
 
     setTimeout(
       function () {
