@@ -60,11 +60,6 @@ export default function Work() {
         </h1>
 
         <p style={{ color: "#9e9e9e", marginBottom: 20 }}>
-          While I have a lot of experience as an Autocad drafter, my desire is
-          to grow into a software position where I can help a company grow and
-          make a big impact on the software development community.
-        </p>
-        <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
           Feel free to reach out to me by clicking on the phone icon on the
           left.
         </p>
@@ -82,7 +77,56 @@ export default function Work() {
         </div>
 
         <Typography style={{ color: "#00C483", fontSize: 14 }}>
-          Dec 2019 - current
+          July 2021 - current
+        </Typography>
+        <h1
+          style={{
+            color: "#FFFFFF",
+            fontSize: 20,
+            marginTop: 2,
+            marginBottom: 4,
+          }}
+        >
+          Buildable, Software Developer
+        </h1>
+        <Typography style={{ color: "#9e9e9e", fontSize: 14, marginBottom: 4 }}>
+          McMinnvile, Oregon
+        </Typography>
+
+        <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
+          Working as a software developer with a team of other software
+          developers, designers, and product managers creating a diverse
+          spectrum of unique and secure software applications.
+        </p>
+
+        <Typography style={{ color: "#00C483", fontSize: 14 }}>
+          Contract
+        </Typography>
+        <h1
+          style={{
+            color: "#FFFFFF",
+            fontSize: 20,
+            marginTop: 2,
+            marginBottom: 4,
+          }}
+        >
+          Papé Group Inc, Full-Stack Software Developer
+        </h1>
+        <Typography style={{ color: "#9e9e9e", fontSize: 14, marginBottom: 4 }}>
+          Remote
+        </Typography>
+
+        <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
+          Working as an independent full-stack software developer to design,
+          create, and develop a web application. Scope of work included
+          maintaining site information, records, and user security across
+          hundreds of sites in Washington, Oregon, and California. Work included
+          setting up authentication, database design, serverless API functions,
+          and a web application creation.
+        </p>
+
+        <Typography style={{ color: "#00C483", fontSize: 14 }}>
+          Dec 2019 - July 2021
         </Typography>
         <h1
           style={{

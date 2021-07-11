@@ -15,7 +15,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 
 //Images
-import resumepic from "./resumepic.png";
+import resumepic from "./resumepic.jpg";
 import coding from "./coding.jpg";
 import BarrelCash from "./BarrelCash.png";
 import DogBearGames from "./DogBearGames.png";

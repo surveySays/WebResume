@@ -29,6 +29,10 @@ import FadeIn from "react-fade-in";
 import BarrelCash from "../BarrelCash.png";
 import adaptMi from "../adaptMi.png";
 import iPhone from "../iPhone.jpg";
+import Naoux from "../naoux.png";
+import BrennenWeb from "../brennenweb.png";
+
+
 
 //Ionicons
 import IosCallOutline from "react-ionicons/lib/IosCallOutline";
@@ -62,14 +66,21 @@ export default function Projects() {
           my projects
         </h1>
 
-        <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
+        <p style={{ color: "#9e9e9e", marginBottom: 15 }}>
           I am always working on code or trying to better my skills at a new
           computer science language. Below you will find some of my past or
           present projects.
         </p>
-        <Divider style={{ backgroundColor: "#9e9e9e", marginBottom: 40 }} />
+        <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
+          While these projects consist of React.js, React Native, javascript, html, css, and NoSQL databases. I also work 
+          on object oriented programming, and data structures using C++ and C#. Visit my <a href="https://github.com/surveySays?tab=repositories" target="_blank" style={{color: "#00C483"}}>Github</a> to see some of my 
+          open-source code.
+        </p>
+        <Divider style={{ backgroundColor: "#9e9e9e", marginBottom: 30 }} />
 
-        <div className={classes.column}>
+       
+
+        <div className={classes.column} style={{marginBottom: 50}}>
           {
             <img
               src={BarrelCash}
@@ -92,17 +103,80 @@ export default function Projects() {
               color: "#9e9e9e",
             }}
           >
-            A web application that I am working on to show off my senior
-            project. This will act as a landing page if someone were to google
-            my app name on the web.
+            A web application written in React.js to display information on my iOS application Barrel Cash. The iOS application
+            will be available on the iOS app store in May 2021 and was written using React Native. 
           </p>
           <a
-            href="https://barrel-cash-web.web.app/"
+            href="https://barrelcash.app/"
             target="_blank"
             style={{ fontFamily: "Montserrat", color: "#00C483" }}
           >
             Barrel Cash Web
           </a>
+        </div>
+
+        <div className={classes.column}>
+          {
+            <img
+              src={Naoux}
+              alt=""
+              style={{
+                width: "100%",
+                maxHeight: 400,
+                marginBottom: 20,
+              }}
+            />
+          }
+          <h1 style={{ fontSize: 34, color: "#FFFFFF", marginBottom: 15 }}>
+            Naoux Outdoors LLC
+          </h1>
+
+          <p
+            style={{
+              maxWidth: "450px",
+              fontFamily: "Montserrat",
+              color: "#9e9e9e",
+            }}
+          >
+            An e-commerce outdoor clothing line created by myself and two others. Custom website created with React.js, custom
+            Rest API created with Node.js and Axios, and hosting and database using firebase. 
+          </p>
+          <a
+            href="https://naoux.co/"
+            target="_blank"
+            style={{ fontFamily: "Montserrat", color: "#00C483" }}
+          >
+            naoux.co
+          </a>
+        </div>
+
+        <div className={classes.column}>
+          {
+            <img
+              src={BrennenWeb}
+              alt=""
+              style={{
+                width: "100%",
+                maxHeight: 400,
+                marginBottom: 20,
+                marginTop: 60,
+              }}
+            />
+          }
+          <h1 style={{ fontSize: 34, color: "#FFFFFF", marginBottom: 15 }}>
+            this website
+          </h1>
+
+          <p
+            style={{
+              maxWidth: "450px",
+              fontFamily: "Montserrat",
+              color: "#9e9e9e",
+            }}
+          >
+            A web application that I created to show off some of my skills in React.js. I am constantly
+            updating this site with new projects I am working on and updating others that I am close to finishing. 
+          </p>
         </div>
 
         <div className={classes.column}>

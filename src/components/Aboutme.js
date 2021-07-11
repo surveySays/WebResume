@@ -26,7 +26,7 @@ import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 
 //Images
 import FadeIn from "react-fade-in";
-import resumepic from "../resumepic.png";
+import resumepic from "../resumepic.jpg";
 
 //Ionicons
 import IosCallOutline from "react-ionicons/lib/IosCallOutline";
@@ -111,18 +111,21 @@ export default function Aboutme() {
           style={{ color: "#00C483", marginBottom: 20 }}
         >
           <Typography style={{ color: "#00C483" }}>
-            <i>22 years</i>
+            <i>23 years</i>
           </Typography>
           <Typography style={{ color: "#00C483" }}>
             <i>Designer</i>
           </Typography>
           <Typography style={{ color: "#00C483" }}>
-            <i>Freelance</i>
+            <i>Software Developer</i>
+          </Typography>
+          <Typography style={{ color: "#00C483" }}>
+            <i>Full-Stack</i>
           </Typography>
         </Breadcrumbs>
         <p style={{ fontFamily: "Montserrat", color: "#9e9e9e" }}>
-          Dont feel like scrolling through this whole website? Open my PDF
-          resume{" "}
+          This website was created by me using React.js. Dont feel like
+          scrolling through this whole website? Open my PDF resume{" "}
           <a
             href={"/BrennenResume.pdf"}
             target="_blank"
@@ -133,27 +136,20 @@ export default function Aboutme() {
         </p>
 
         <p style={{ fontFamily: "Montserrat", color: "#9e9e9e" }}>
-          <b>Hi</b>, my name is Brennen. I am currently an undergraduate at
-          Oregon Institute of Technology and I am majoring in{" "}
-          <b>Software Engineering Technology</b>.<b> I am seeking</b> my first
-          full-time position as a software engineer/developer working with
-          either back-end or front-end code.
+          <b>Hi</b>, my name is Brennen. I recently graduated from Oregon
+          Institute of Technology with a B.S. in{" "}
+          <b>Software Engineering Technology</b>. I am currently working as a
+          full-time software developer at <b>Buildable</b>.
         </p>
         <p style={{ fontFamily: "Montserrat", color: "#9e9e9e" }}>
-          I am currently working full-time as a Bridge Structural & Marine
-          Drafter for a company throughout the Pacific North West. They
-          specialize in roadway, bridge, structural and marine practice area
-          engineering working with multiple clients.
+          My passion is to create dynamic full-stack software applications that
+          are unique and provide a truly immersive user experience. My favorite
+          software languages are <b>C++</b>, <b>React</b>, & <b>React Native</b>
+          . Recently I have been looking into the power of <u>threejs.org</u> to
+          create 3D immersive web experiences with code.
         </p>
-        <p style={{ fontFamily: "Montserrat", color: "#9e9e9e" }}>
-          My passion for work is to become a full-time software
-          developer/engineer. I enjoy both front-end and back-end development
-          but also appreciate and am always willing to learn new things. I am
-          constanty working on side projects including web apps, iOS/android
-          apps using React Native, and keeping my skills sharp with C++ &
-          JavaScript algorithms.
-        </p>
-        <Divider style={{ backgroundColor: "#9e9e9e", marginBottom: 40 }} />
+
+        <Divider style={{ backgroundColor: "#9e9e9e", marginBottom: 30 }} />
         <h1 style={{ fontSize: 34, color: "#FFFFFF", marginBottom: 30 }}>
           my services
         </h1>
@@ -177,9 +173,9 @@ export default function Aboutme() {
                   development
                 </h1>
                 <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
-                  I specialize in web development including front-end UI/UX as
-                  well as back-end data manipulation. Also have experience
-                  developing code for iOS and android.
+                  I specialize in dynamic web development including front-end
+                  UI/UX as well as back-end data manipulation. Also have
+                  experience developing code for iOS and android.
                 </p>
               </div>
               <div style={{ width: "49%" }}>
@@ -231,9 +227,9 @@ export default function Aboutme() {
                   optimization
                 </h1>
                 <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
-                  Rewriting legacy code in order for optimized speed and
-                  organized methods. Following S.O.L.I.D. principles when
-                  applicable in all applications.
+                  Rewriting legacy code to modern technologies to provide
+                  optimized speed and organized methods. Following S.O.L.I.D.
+                  principles when applicable in all applications.
                 </p>
               </div>
             </div>
@@ -320,7 +316,7 @@ export default function Aboutme() {
           Oregon Institute of Technology
         </h1>
         <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
-          B.S. - Software Engineering Technology <i>(In Progress)</i>
+          B.S. - Software Engineering Technology
         </p>
         <h1 style={{ color: "#FFFFFF", fontSize: 20, marginTop: 8 }}>
           Chemeketa Community College

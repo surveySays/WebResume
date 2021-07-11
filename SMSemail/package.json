@@ -1,0 +1,15 @@
+{
+  "name": "smsemail",
+  "version": "1.0.0",
+  "description": "sms email sender for web resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "twilio": "^3.59.0"
+  }
+}

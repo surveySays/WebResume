@@ -99,7 +99,7 @@ export class Contact extends Component {
   handleSumbit = (event) => {
     event.preventDefault();
 
-    const formData = {
+    let formData = {
       name: this.state.name,
       email: this.state.email,
       message: this.state.message,
@@ -147,7 +147,32 @@ export class Contact extends Component {
     this.setState({ name: "", email: "", message: "" });
 
     db.collection("messages").add(formData);
-    // mail.mailer(formData, db);
+
+    formData = {
+      name: this.state.name,
+      email: this.state.email,
+      message:
+        "message: " +
+        this.state.message +
+        ", \n" +
+        "name: " +
+        this.state.name +
+        ", \n" +
+        "email: " +
+        this.state.email,
+      created: new Date().toISOString(),
+    };
+    // SMS Fetch API
+    fetch(
+      "https://us-central1-brennenwebresume.cloudfunctions.net/api/sendemail/",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      }
+    ).then((response) => response.json());
 
     setTimeout(
       function () {
@@ -202,10 +227,13 @@ export class Contact extends Component {
             touch.
           </p>
 
-          <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
-            P.S., I also love hearing from employers!
-          </p>
-          <Divider style={{ backgroundColor: "#9e9e9e", marginBottom: 30 }} />
+          <Divider
+            style={{
+              backgroundColor: "#9e9e9e",
+              marginBottom: 30,
+              marginTop: 10,
+            }}
+          />
 
           <div
             style={{
@@ -442,19 +470,18 @@ const useStyles = (theme) => ({
     "& label.Mui-focused": {
       color: "#00C483",
     },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "#00C483",
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "white",
+      },
     },
-    "& .MuiInput-underline:before": {
-      borderBottomColor: "#9e9e9e",
+    multilineColor: {
+      color: "#00C483",
     },
-  },
-  multilineColor: {
-    color: "#00C483",
-  },
-  buttonShop: {
-    "&:focus": {
-      outline: "none",
+    buttonShop: {
+      "&:focus": {
+        outline: "none",
+      },
     },
   },
 });

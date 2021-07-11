@@ -24,7 +24,7 @@ import CallIcon from "@material-ui/icons/Call";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 
 //Images
-import resumepic from "./resumepic.png";
+import resumepic from "./resumepic.jpg";
 import BB from "./BB.png";
 
 //Ionicons
@@ -385,7 +385,7 @@ const useStyles = (theme) => ({
   border: {
     width: "90%",
     height: "100%",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#000000",
     position: "fixed",
     left: 0,
     right: 0,
@@ -409,6 +409,9 @@ const useStyles = (theme) => ({
     width: "100%",
     height: "100%",
     backgroundColor: "#000000",
+    maxWidth: 1440,
+    marginLeft: "auto",
+    marginRight: "auto",
   },
   picInfo: {
     position: "absolute",
