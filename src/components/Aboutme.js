@@ -111,21 +111,21 @@ export default function Aboutme() {
           style={{ color: "#00C483", marginBottom: 20 }}
         >
           <Typography style={{ color: "#00C483" }}>
-            <i>23 years</i>
+            <i>26 years</i>
           </Typography>
           <Typography style={{ color: "#00C483" }}>
-            <i>Designer</i>
+            <i>Software Engineer</i>
           </Typography>
           <Typography style={{ color: "#00C483" }}>
-            <i>Software Developer</i>
+            <i>UI/UX Architect</i>
           </Typography>
           <Typography style={{ color: "#00C483" }}>
             <i>Full-Stack</i>
           </Typography>
         </Breadcrumbs>
         <p style={{ fontFamily: "Montserrat", color: "#9e9e9e" }}>
-          This website was created by me using React.js. Dont feel like
-          scrolling through this whole website? Open my PDF resume{" "}
+          This website was created by me using React. Dont feel like scrolling
+          through this whole website? Open my PDF resume{" "}
           <a
             href={"/BrennenResume.pdf"}
             target="_blank"
@@ -136,10 +136,10 @@ export default function Aboutme() {
         </p>
 
         <p style={{ fontFamily: "Montserrat", color: "#9e9e9e" }}>
-          <b>Hi</b>, my name is Brennen. I recently graduated from Oregon
-          Institute of Technology with a B.S. in{" "}
-          <b>Software Engineering Technology</b>. I am currently working as a
-          full-time software developer at <b>Buildable</b>.
+          <b>Hi</b>, my name is Brennen. I graduated from Oregon Institute of
+          Technology with a B.S. in <b>Software Engineering Technology</b>. I am
+          currently working as a full-time senior software engineer at{" "}
+          <b>SMA Technologies</b>.
         </p>
         <p style={{ fontFamily: "Montserrat", color: "#9e9e9e" }}>
           My passion is to create dynamic full-stack software applications that
@@ -149,7 +149,13 @@ export default function Aboutme() {
           create 3D immersive web experiences with code.
         </p>
 
-        <Divider style={{ backgroundColor: "#9e9e9e", marginBottom: 30 }} />
+        <Divider
+          style={{
+            backgroundColor: "#9e9e9e",
+            marginBottom: 30,
+            marginTop: 30,
+          }}
+        />
         <h1 style={{ fontSize: 34, color: "#FFFFFF", marginBottom: 30 }}>
           my services
         </h1>

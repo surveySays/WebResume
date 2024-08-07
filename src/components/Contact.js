@@ -220,13 +220,6 @@ export class Contact extends Component {
             contact me
           </h1>
 
-          <p style={{ color: "#9e9e9e", marginBottom: 20 }}>
-            Just say hi! I am always working on new projects and I love hearing
-            from anyone with tips, ideas, or if you want to collaborate on
-            something cool. Feel free to fill out the form below to get in
-            touch.
-          </p>
-
           <Divider
             style={{
               backgroundColor: "#9e9e9e",
@@ -305,82 +298,38 @@ export class Contact extends Component {
                   marginLeft: 6,
                 }}
               >
-                Salem, Oregon
+                Portland, Oregon
               </Typography>
             </div>
           </div>
-
           <Divider
             style={{
               backgroundColor: "#9e9e9e",
               marginBottom: 30,
-              marginTop: 30,
+              marginTop: 20,
             }}
           />
-          <h1 style={{ fontSize: 34, color: "#FFFFFF", marginBottom: 20 }}>
-            send message
-          </h1>
-          <TextField
-            error={this.state.emptyName}
-            required
-            name="name"
-            label="Name"
-            type="name"
-            id="name"
-            value={this.state.name}
-            onChange={this.handleChange}
-            InputLabelProps={{ classes: { root: classes.textF } }}
-            InputProps={{ className: classes.multilineColor }}
-            className={classes.textF}
-          />
-          <TextField
-            id="email"
-            name="email"
-            label="Email"
-            required
-            error={this.state.emptyEmail}
-            autoComplete="email"
-            value={this.state.email}
-            onChange={this.handleChange}
-            InputLabelProps={{ classes: { root: classes.textF } }}
-            InputProps={{ className: classes.multilineColor }}
-            className={classes.textF}
-          />
-          <TextField
-            error={this.state.emptyMessage}
-            id="message"
-            label="Message"
-            name="message"
-            multiline
-            value={this.state.message}
-            onChange={this.handleChange}
-            autoComplete="none"
-            rows={4}
-            InputLabelProps={{ classes: { root: classes.textF } }}
-            InputProps={{ className: classes.multilineColor }}
-            className={classes.textF}
-          />
-
-          <Button
-            onClick={this.handleSumbit}
-            style={{
-              backgroundColor: "#00C483",
-
-              "&:focus": {
-                outline: "none",
-              },
-              "*:focus": {
-                outline: "none",
-              },
-            }}
-          >
-            send message
-          </Button>
-          {this.state.showAlert ? (
-            <SuccessAlert
-              style={{ position: "fixed", bottom: 30, right: 30, zIndex: 10 }}
-            />
-          ) : null}
+          <p style={{ color: "#9e9e9e", marginBottom: 15 }}>
+            Hello, my name is Brennen Boese. I am a 26-year-old senior software
+            engineer with a deep passion for UI and user experiences. Throughout
+            my career, I have honed my skills and expertise in React, React
+            Native, and C++, which have allowed me to create seamless and
+            intuitive applications for various platforms.
+          </p>
+          <p style={{ color: "#9e9e9e", marginBottom: 15 }}>
+            Living in the beautiful Pacific Northwest, I find inspiration in the
+            stunning landscapes and vibrant tech community around me. I am
+            fortunate to share my life with my wonderful wife and our two
+            beautiful children, who bring joy and balance to my busy
+            professional life.
+          </p>
+          <p style={{ color: "#9e9e9e", marginBottom: 15 }}>
+            In my work, I strive to blend technical proficiency with a
+            user-centric approach, ensuring that the software I develop not only
+            meets but exceeds user expectations. My journey in the tech world is
+            driven by a continuous desire to learn, innovate, and contribute to
+            creating exceptional digital experiences.
+          </p>
         </FadeIn>
       </div>
     );

@@ -32,8 +32,6 @@ import iPhone from "../iPhone.jpg";
 import Naoux from "../naoux.png";
 import BrennenWeb from "../brennenweb.png";
 
-
-
 //Ionicons
 import IosCallOutline from "react-ionicons/lib/IosCallOutline";
 import IosPersonOutline from "react-ionicons/lib/IosPersonOutline";
@@ -69,18 +67,24 @@ export default function Projects() {
         <p style={{ color: "#9e9e9e", marginBottom: 15 }}>
           I am always working on code or trying to better my skills at a new
           computer science language. Below you will find some of my past or
-          present projects.
+          present projects. Not all are listed due to security.
         </p>
         <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
-          While these projects consist of React.js, React Native, javascript, html, css, and NoSQL databases. I also work 
-          on object oriented programming, and data structures using C++ and C#. Visit my <a href="https://github.com/surveySays?tab=repositories" target="_blank" style={{color: "#00C483"}}>Github</a> to see some of my 
-          open-source code.
+          While these projects consist of React, React Native, javascript, html,
+          css, and NoSQL databases. I also work on object oriented programming,
+          and data structures using C++ and C#. Visit my{" "}
+          <a
+            href="https://github.com/surveySays?tab=repositories"
+            target="_blank"
+            style={{ color: "#00C483" }}
+          >
+            Github
+          </a>{" "}
+          to see some of my open-source code.
         </p>
         <Divider style={{ backgroundColor: "#9e9e9e", marginBottom: 30 }} />
 
-       
-
-        <div className={classes.column} style={{marginBottom: 50}}>
+        <div className={classes.column} style={{ marginBottom: 50 }}>
           {
             <img
               src={BarrelCash}
@@ -103,8 +107,9 @@ export default function Projects() {
               color: "#9e9e9e",
             }}
           >
-            A web application written in React.js to display information on my iOS application Barrel Cash. The iOS application
-            will be available on the iOS app store in May 2021 and was written using React Native. 
+            A web application written in React to display information on my iOS
+            application Barrel Cash. The iOS application will be available on
+            the iOS app store in May 2021 and was written using React Native.
           </p>
           <a
             href="https://barrelcash.app/"
@@ -138,8 +143,9 @@ export default function Projects() {
               color: "#9e9e9e",
             }}
           >
-            An e-commerce outdoor clothing line created by myself and two others. Custom website created with React.js, custom
-            Rest API created with Node.js and Axios, and hosting and database using firebase. 
+            An e-commerce outdoor clothing line created by myself and two
+            others. Custom website created with React, custom Rest API created
+            with Node.js and Axios, and hosting and database using firebase.
           </p>
           <a
             href="https://naoux.co/"
@@ -174,8 +180,9 @@ export default function Projects() {
               color: "#9e9e9e",
             }}
           >
-            A web application that I created to show off some of my skills in React.js. I am constantly
-            updating this site with new projects I am working on and updating others that I am close to finishing. 
+            A web application that I created to show off some of my skills in
+            React. I am constantly updating this site with new projects I am
+            working on and updating others that I am close to finishing.
           </p>
         </div>
 

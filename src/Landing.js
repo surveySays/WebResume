@@ -487,7 +487,7 @@ export class Landing extends Component {
                 <b>Hi</b>, my name is Brennen. I am an undergraduate at Oregon
                 Institute of Technology and I am majoring in{" "}
                 <b>Software Engineering Technology</b>. I specialize
-                in Front-End dynamic web development with React.js, CSS/JSX, and
+                in Front-End dynamic web development with React, CSS/JSX, and
                 HTML. <b>I am seeking</b> my first full-time position as
                 a software engineer/developer working with either back-end or
                 front-end code.
@@ -751,7 +751,7 @@ export class Landing extends Component {
                     <li>JavaScript</li>
                     <li>HTML</li>
                     <li>CSS/JSX</li>
-                    <li>React.js</li>
+                    <li>React</li>
                   </ul>
                   <ul className={classes.list}>
                     <li>React Native</li>
@@ -784,7 +784,7 @@ export class Landing extends Component {
                     <li>JavaScript</li>
                     <li>HTML</li>
                     <li>CSS/JSX</li>
-                    <li>React.js</li>
+                    <li>React</li>
                     <li>Rest API</li>
                     <li>Cloud Functions</li>
                     <li>Teamwork</li>

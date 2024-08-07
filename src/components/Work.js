@@ -1,42 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 //Material UI
-import { withStyles } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
-import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-import { Tooltip } from "@material-ui/core";
-import Badge from "@material-ui/core/Badge";
-import MenuIcon from "@material-ui/icons/Menu";
-import IconButton from "@material-ui/core/IconButton";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Divider from "@material-ui/core/Divider";
-import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
-import WorkIcon from "@material-ui/icons/Work";
-import BuildIcon from "@material-ui/icons/Build";
-import ComputerIcon from "@material-ui/icons/Computer";
-import CallIcon from "@material-ui/icons/Call";
-import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 
 //Images
 import FadeIn from "react-fade-in";
 
 //Ionicons
-import IosCallOutline from "react-ionicons/lib/IosCallOutline";
-import IosPersonOutline from "react-ionicons/lib/IosPersonOutline";
 import IosBriefcaseOutline from "react-ionicons/lib/IosBriefcaseOutline";
-import IosBuildOutline from "react-ionicons/lib/IosBuildOutline";
-import IosCloudDownloadOutline from "react-ionicons/lib/IosCloudDownloadOutline";
-import IosLaptop from "react-ionicons/lib/IosLaptop";
-import IosJetOutline from "react-ionicons/lib/IosJetOutline";
-import LogoBuffer from "react-ionicons/lib/LogoBuffer";
-import IosCode from "react-ionicons/lib/IosCode";
 
 export default function Work() {
   const classes = useStyles();
@@ -77,7 +51,31 @@ export default function Work() {
         </div>
 
         <Typography style={{ color: "#00C483", fontSize: 14 }}>
-          July 2021 - current
+          November 2021 - current
+        </Typography>
+        <h1
+          style={{
+            color: "#FFFFFF",
+            fontSize: 20,
+            marginTop: 2,
+            marginBottom: 4,
+          }}
+        >
+          SMA Technologies, Sr. Software Engineer
+        </h1>
+        <Typography style={{ color: "#9e9e9e", fontSize: 14, marginBottom: 4 }}>
+          Houston, Texas (Remote)
+        </Typography>
+
+        <p style={{ color: "#9e9e9e", marginBottom: 40 }}>
+          Working as a software engineer leading the frontend on my team. We are
+          using React (with TypeScript), C# backend, and a SQL Database. Our
+          team is rewriting a legacy desktop application written in Java and
+          converting it to a cloud web application.
+        </p>
+
+        <Typography style={{ color: "#00C483", fontSize: 14 }}>
+          July 2021 - November 2021
         </Typography>
         <h1
           style={{
